@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>World Cup AI Prediction System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #0f172a
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+
+    width:900px;
+    max-width:90%;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    text-align:center;
+
+    box-shadow:
+        0 0 30px rgba(0,255,255,0.15);
+}
+
+h1{
+    color:white;
+    font-size:52px;
+    margin-bottom:15px;
+
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+    from{
+        text-shadow:
+            0 0 10px #00ffff;
+    }
+
+    to{
+        text-shadow:
+            0 0 30px #00ffff,
+            0 0 60px #00ffff;
+    }
+}
+
+.subtitle{
+    color:#94a3b8;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.author{
+
+    color:#38bdf8;
+    font-size:20px;
+    margin-bottom:40px;
+}
+
+.features{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+
+    color:white;
+
+    margin-bottom:40px;
+}
+
+.feature{
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,0.05);
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 40px;
+
+    margin:10px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:20px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #06b6d4,
+        #3b82f6
+    );
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 0 20px #3b82f6;
+}
+
+.footer{
+
+    margin-top:40px;
+
+    color:#64748b;
+}
+
+.ball{
+
+    position:absolute;
+
+    font-size:40px;
+
+    animation:float 6s infinite ease-in-out;
+}
+
+.ball:nth-child(1){
+    top:10%;
+    left:10%;
+}
+
+.ball:nth-child(2){
+    top:80%;
+    right:15%;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-30px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="ball">⚽</div>
+<div class="ball">⚽</div>
+
+<div class="card">
+
+<h1>World Cup AI Prediction</h1>
+
+<div class="subtitle">
+Advanced Football Intelligence Engine
+</div>
+
+<div class="author">
+Built by Sonny Gao
+</div>
+
+<div class="features">
+
+<div class="feature">📊 FIFA Rankings Analysis</div>
+
+<div class="feature">⚡ ELO Rating Model</div>
+
+<div class="feature">🎯 xG Probability Engine</div>
+
+<div class="feature">📰 News Intelligence</div>
+
+<div class="feature">💰 Betting Market Signals</div>
+
+<div class="feature">🤖 AI Match Prediction</div>
+
+</div>
+
+<a class="btn"
+   href="worldcup_prediction_prompt.md"
+   download>
+   Download Prompt
+</a>
+
+<a class="btn"
+   href="https://github.com/LoveEvaEverything/WorldCupAiPrediction">
+   GitHub
+</a>
+
+<div class="footer">
+
+World Cup Match Prediction Expert v3.0
+
+</div>
+
+</div>
+
+</body>
+</html>
